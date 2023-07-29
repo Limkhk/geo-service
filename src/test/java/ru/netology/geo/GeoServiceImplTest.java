@@ -11,8 +11,8 @@ public class GeoServiceImplTest {
     void byIpTest() {
         // Arrange
         GeoService geoService = new GeoServiceImpl();
-        // Act
         Location actual = geoService.byIp("172.27.105.11");
+        // Act
         Location expected = new Location("Moscow", Country.RUSSIA, null, 0);
         // Assert
         Assertions.assertEquals(expected.getCity(), actual.getCity());
